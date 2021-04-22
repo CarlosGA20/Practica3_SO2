@@ -157,3 +157,8 @@ Utilizamos el comando siguiente para verificar los kernels que se encuentran ins
 	sudo update-grub  
 
 ![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/20.PNG)
+
+Podemos ver que se encuentran instalados el kernel actual, 5.8.0, y el que acabamos de instalar, el 5.11.15.
+Una vez que reiniciemos y ejecutemos nuevamente el comando `uname -r` podremos observar que ya se está utilizando el kernel recién instalado.
+
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/21.PNG)
