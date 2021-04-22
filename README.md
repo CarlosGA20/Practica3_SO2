@@ -44,7 +44,7 @@ sudo apt-get install libncurses-dev flex bison openssl libssl-dev dkms libelf-de
 
 ##  4. ¿Cómo descargar una versión de kernel desde terminal?.
 
-Tenemos que visitar la página [kernel.org](kernel.org) para revisar qué versión deseamos descargar.  En nuestro caso descargaremos la versión 5.11.15 como ejemplo. Copiamos el link e introducimos el comando:
+Tenemos que visitar la página [kernel.org](kernel.org) para revisar qué versión deseamos descargar.  En nuestro caso descargaremos la versión 5.11.15 como ejemplo en el directorio Documents. Copiamos el link e introducimos el comando:
 ```
 wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.15.tar.xz
 ```
