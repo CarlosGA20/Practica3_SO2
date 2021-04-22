@@ -1,4 +1,4 @@
-# Práctica 2
+# Práctica 3
 ## 1. ¿Cómo hacer un respaldo de una máquina virtual? y ¿cómo levantar ese respaldo?
 
 La forma más fácil para hacer un respaldo de una máquina virtual si estamos usando el software VirtualBox es hacerlo desde la aplicación, para esto damos clic derecho sobre la máquina virtual que deseamos respaldar y seleccionamos la opción clonar.
