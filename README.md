@@ -3,19 +3,19 @@
 
 La forma más fácil para hacer un respaldo de una máquina virtual si estamos usando el software VirtualBox es hacerlo desde la aplicación, para esto damos clic derecho sobre la máquina virtual que deseamos respaldar y seleccionamos la opción clonar.
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/1.png)
 
 En la ventana que se abre le asignaremos un nombre al respaldo de la máquina virtual y seleccionaremos el directorio donde deseamos guardarla, después seleccionamos Next.
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/2.png)
 
 En la siguiente ventana seleccionamos la opción Clonación completa y presionamos el botón Clonar.
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/3.png)
 
 Una vez finalizado el proceso podremos iniciar el respaldo de la máquina virtual como solemos hacerlo, seleccionando el botón Iniciar.
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/4.png)
 
 ## 2. Explicar la nomenclatura del kernel.
 
@@ -40,7 +40,7 @@ Para instalar estos paquetes utilizaremos el comando `sudo apt-get install`.
 sudo apt-get install libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf
 ``` 
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/5.png)
 
 ##  4. ¿Cómo descargar una versión de kernel desde terminal?.
 
@@ -49,7 +49,7 @@ Tenemos que visitar la página [kernel.org](kernel.org) para revisar qué versi�
 wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.15.tar.xz
 ```
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/6.png)
 
 ## 5. ¿Cómo extraer el código comprimido del kernel desde terminal?
 
@@ -57,13 +57,13 @@ Primero nos movemos al directorio donde se encuentra el archivo comprimido. Para
 
 	tar xf linux-5.11.15.tar 
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/7.png)
 
 Y nos movemos a la carpeta recién descomprimida
 
 	cd linux-5.11.15 
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/8.png)
 
 ## 6. ¿Cómo configurar el kernel? 
 
@@ -71,35 +71,35 @@ Para configurar el kernel recién descargado podemos utilizar el archivo de conf
 
 	cp /boot/config-$(uname -r) .config   
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/9.png)
 
 Después ejecutamos el comando:
 
 	make menuconfig
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/10.png)
 
 Con las flechas del teclado seleccionamos Save.
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/11.png)
 
 Presionamos Ok.
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/12.png)
 
 Para terminar seleccionamos Exit.
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/13.png)
 
 Y volvemos a seleccionar Exit.
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/14.png)
 
 Para finalizar este paso ingresamos el comando:
 
 	scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/15.png)
 
 ## 7. ¿Cómo compilar el código del kernel?
 
@@ -115,7 +115,7 @@ Si no deseamos indicar cuántos núcleos usará la compilación únicamente ejec
 
 Este paso tardará algunas horas y es normal, sólo debemos dejar que la compilación termine sin cerrar la terminal.
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/16.png)
 
 ## 8. ¿Cómo instalar módulos?
 
@@ -125,7 +125,7 @@ Después de que termine la compilación del kernel procederemos a instalar los m
 
 De igual forma que el paso anterior, indicaremos el número de núcleos que deseamos usar para acelerar el proceso.
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/17.png)
 
 ## 9. ¿Cómo instalar el kernel?
 
@@ -133,7 +133,7 @@ Con el siguiente comando instalaremos el kernel y el archivo .config  en el dire
 	
 	sudo make install -j 3
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/18.png)
 
 ## 10. ¿Cómo indicarle a la computadora con cuál kernel debe iniciar?
 
@@ -142,7 +142,7 @@ Nosotros indicaremos que use la versión 5.11.15, pero este campo depende de que
  
 	sudo update-initramfs -c -k 5.11.15
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/19.png)
 
 ## 11. ¿Cómo verificar el cambio de kernel a partir de consola?
 
@@ -150,4 +150,4 @@ Utilizamos el comando siguiente para verificar los kernels que se encuentran ins
 	
 	sudo update-grub  
 
-![alt text](https://github.com/19-21-29/Practica1_SO2/blob/main/Practica/Paso1.PNG)
+![alt text](https://github.com/CarlosGA20/Practica3_SO2/blob/main/Capturas/20.png)
