@@ -19,6 +19,20 @@ Una vez finalizado el proceso podremos iniciar el respaldo de la máquina virtua
 
 ## 2. Explicar la nomenclatura del kernel.
 
+La nomenclatura del kernel de linux se compone de tres secciones, cáda una dividida por un punto:
+
+**w.xx.yy**
+
+- **w**: Indica el número de versión del kernel.
+- **xx**: El segundo campo indica el número de revisión o subversión. Si este número es par la versión es estable, y si es impar es inestable.
+- **yy**: El tercer campo indica el número de corrección en la que se encuentra esta versión.
+
+A veces, encontraremos nomenclaturas que cuentan con un campo extra con el formato:
+
+**w.xx.yy-zzzz**
+
+El cuarto campo **zzzz** indica el número de parche de la versión.
+
 ## 3. Enlistar paquetes requeridos para la compilación y ¿cómo instalarlos desde terminal?.
 
 Los paquetes que necesitaremos para compilar el kernel son:
